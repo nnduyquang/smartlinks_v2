@@ -172,3 +172,4 @@
 	</div><!-- /.nav-collapse -->
   </nav>
 </div>
+            {!! Html::script('public/js/menutop.js') !!}
