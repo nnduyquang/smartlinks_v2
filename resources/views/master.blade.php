@@ -16,7 +16,7 @@
            @include('menu.menutop')
 
     </div>
-    <div class="main-contain">
+    <div class="main-contain container">
         @yield('main-contain')
     </div>
 </div>
