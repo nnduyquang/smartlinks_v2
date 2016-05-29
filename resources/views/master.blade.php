@@ -10,11 +10,14 @@
     <title>Laravel</title>
     {!! Html::style('public/css/bootstrap.min.css') !!} 
     {!! Html::style('public/css/menutop.css') !!}
+    {!! Html::style('public/css/reset.css') !!}
+    {!! Html::style('public/css/sliderMain.css') !!}
 </head>
 
 <body>
     {{-- Gắn menu, header--}}
     @include('menu.menutop')
+    @include('slider.sliderMain')
     
     {{-- Gắn main contain--}}
     <div class="main-contain container">
@@ -24,6 +27,8 @@
     {!! Html::script('public/js/jquery-1.12.4.min.js') !!}
     <script>window.jQuery || document.write('<script src="http://localhost:8080/smartlinks_v2/public/js/jquery-1.12.4.min.js"><\/script>')</script>
     {!! Html::script('public/js/bootstrap.min.js') !!}
+    {!! Html::script('public/js/modernizr.js') !!}
+    {!! Html::script('public/js/sliderMain.js') !!}
 
 </body>
 </html>
