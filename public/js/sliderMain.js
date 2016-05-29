@@ -4,12 +4,12 @@ jQuery(document).ready(function($){
 	//check if a .cd-hero-slider exists in the DOM 
 	if ( slidesWrapper.length > 0 ) {
 		var primaryNav = $('.cd-primary-nav'),
-			sliderNav = $('.cd-slider-nav'),
-			navigationMarker = $('.cd-marker'),
-			slidesNumber = slidesWrapper.children('li').length,
-			visibleSlidePosition = 0,
-			autoPlayId,
-			autoPlayDelay = 5000;
+		sliderNav = $('.cd-slider-nav'),
+		navigationMarker = $('.cd-marker'),
+		slidesNumber = slidesWrapper.children('li').length,
+		visibleSlidePosition = 0,
+		autoPlayId,
+		autoPlayDelay = 5000;
 
 		//upload videos (if not on mobile devices)
 		uploadVideo(slidesWrapper);
@@ -29,7 +29,7 @@ jQuery(document).ready(function($){
 			if(!selectedItem.hasClass('selected')) {
 				// if it's not already selected
 				var selectedPosition = selectedItem.index(),
-					activePosition = slidesWrapper.find('li.selected').index();
+				activePosition = slidesWrapper.find('li.selected').index();
 				
 				if( activePosition < selectedPosition) {
 					nextSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, selectedPosition);
@@ -97,7 +97,7 @@ jQuery(document).ready(function($){
 			if( videoWrapper.is(':visible') ) {
 				// if visible - we are not on a mobile device 
 				var	videoUrl = videoWrapper.data('video'),
-					video = $('<video loop><source src="'+videoUrl+'.mp4" type="video/mp4" /><source src="'+videoUrl+'.webm" type="video/webm" /></video>');
+				video = $('<video loop><source src="'+videoUrl+'.mp4" type="video/mp4" /><source src="'+videoUrl+'.webm" type="video/webm" /></video>');
 				video.appendTo(videoWrapper);
 				// play video if first slide
 				if(videoWrapper.parent('.cd-bg-video.selected').length > 0) video.get(0).play();
@@ -118,15 +118,23 @@ jQuery(document).ready(function($){
 	function updateNavigationMarker(marker, n) {
 		marker.removeClassPrefix('item').addClass('item-'+n);
 	}
+	//Stop slide when mouseover
+	slidesWrapper.on('mouseover', function() {
+		clearInterval(autoPlayId);
+	});
 
+	slidesWrapper.on('mouseout', function() {
+		setAutoplay(slidesWrapper, slidesNumber, autoPlayDelay);
+	});
+	// End function
 	$.fn.removeClassPrefix = function(prefix) {
 		//remove all classes starting with 'prefix'
-	    this.each(function(i, el) {
-	        var classes = el.className.split(" ").filter(function(c) {
-	            return c.lastIndexOf(prefix, 0) !== 0;
-	        });
-	        el.className = $.trim(classes.join(" "));
-	    });
-	    return this;
+		this.each(function(i, el) {
+			var classes = el.className.split(" ").filter(function(c) {
+				return c.lastIndexOf(prefix, 0) !== 0;
+			});
+			el.className = $.trim(classes.join(" "));
+		});
+		return this;
 	};
 });
