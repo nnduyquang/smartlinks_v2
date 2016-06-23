@@ -117,3 +117,14 @@ article{
     background: -ms-linear-gradient(top,rgba(0,0,0,0),#cccccc,rgba(0,0,0,0));
     background: -o-linear-gradient(top,rgba(0,0,0,0),#cccccc,rgba(0,0,0,0));
 }
+/*sets semitransparent color to sticky navbar*/
+.mbr-navbar--stuck& .mbr-navbar__section {
+     background: rgba(9, 67, 136, 0.5)!important;
+}
+/*sets semitransparent color to top navbar */
+.mbr-navbar__section {
+     background: rgba(134, 195, 239, 0.5);
+}
+.backmaintransparent{
+    
+}

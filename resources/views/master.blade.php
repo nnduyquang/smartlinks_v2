@@ -9,12 +9,20 @@
     <meta name="author" content="">
     <meta name="keywords"  content="" />
     <title>Laravel</title>
-    {!! Html::style('public/css/bootstrap.min.css') !!} 
-    {!! Html::style('public/css/menutop.css') !!}
+    {!! HTML::style('public/css/bootstrap.min.css') !!}
+
+    {{-- Demo CSS MenuTop--}}
+    {{-- Html::style('public/css/menu/menutop.css') --}}
+
+    {{-- Demo CSS MenuTop2 --}}
+    {!! Html::style('public/css/menu/menutop2.css') !!} 
+
     {!! Html::style('public/css/reset.css') !!}
     {!! Html::style('public/css/sliderMain.css') !!}
+
     {{-- Font Awesome--}} 
     {!! Html::style('public/font-awesome-4.6.3/css/font-awesome.min.css') !!}
+
     {{-- Demo CSS FullPage--}}    
     {!! Html::style('public/css/fullpage/jquery.fullPage.css') !!}
     {!! Html::style('public/css/fullpage/fullpage.css') !!}
@@ -24,8 +32,15 @@
 
 <body>
     {{-- Gắn menu, header,slider--}}
+
+    {{-- Gắn menu 1 
     {{-- @include('menu.menutop')--}}
-    {{-- @include('slider.sliderMain')--}}
+
+    {{-- Gắn menu 2 
+    @include('menu.menutop2') --}}
+
+    {{-- Gắn slide 
+    @include('slider.sliderMain') --}}
     
     {{-- Gắn main contain--}}
     <div class="main-contain">
@@ -38,6 +53,9 @@
     {!! Html::script('public/js/bootstrap.min.js') !!}
     {!! Html::script('public/js/modernizr.js') !!}
     {!! Html::script('public/js/sliderMain.js') !!}
+
+    {{-- Demo JS MenuTop2 --}}
+    {!! Html::script('public/js/menu/menutop2.js') !!}
 
     {{-- Demo JS FullPage--}}
     {!! Html::script('public/js/fullpage/scrolloverflow.min.js') !!}

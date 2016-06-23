@@ -1,8 +1,10 @@
 @extends('master')
 @section('main-contain')
-{{-- @include('slider.homepage') --}}
 
-{{-- Demo FullPage--}}
+{{-- Demo HomePage 
+@include('slider.homepage') --}}
+
+{{-- Demo FullPage --}}
 @include('fullpage')
 
 @stop
