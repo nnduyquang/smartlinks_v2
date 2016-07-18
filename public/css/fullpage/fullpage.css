@@ -70,7 +70,7 @@ p{
 	font-size: 1.5em;
 }
 .section{
-	text-align:center;
+	text-align:left;
 }
 #menu li {
 	display:inline-block;
@@ -231,6 +231,18 @@ p{
 	padding: 0 0 5px 0;
 }
 
+#section2{
+		background-size: cover;
+		background-attachment: fixed;
+}
+
+#section2{
+		background-image: url(../../../resources/assets/fullpage/bg3.jpg);
+		padding: 6% 0 0 0;
+}
+
+
+
 
 
 /* Demos Menu
@@ -241,4 +253,43 @@ p{
 	right:10px;
 	z-index: 999;
  }
+ .menuRight{
+ 	float: right !important;
+ }
+
+
+
+
+/* Tabs panel */
+/* USER PROFILE PAGE */
+.tab-style{
+	padding: 16px 0 16px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+.styled-list li {
+    line-height: 24px;
+    margin-bottom: 8px;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 25px;
+    color: #253d4a;
+}
+.styled-list li:before {
+    content: '\f178';
+    font-family: 'FontAwesome';
+    color: #71b100;
+    font-size: 12px;
+    left: 0;
+    line-height: 18px;
+    position: absolute;
+    top: 3px;
+}
+.well{
+	opacity: 0.9;
+    filter: alpha(opacity=90);
+    background-color:#fff;
+}
 

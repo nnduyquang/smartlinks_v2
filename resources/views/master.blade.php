@@ -28,6 +28,9 @@
     {!! Html::style('public/css/fullpage/fullpage.css') !!}
     {!! Html::style('public/css/fullpage/canho.css') !!}
 
+    {{-- Demo CSS Sticky--}}
+    {!! Html::style('public/css/sticky/sticky.css') !!}
+
 </head>
 
 <body>
@@ -36,7 +39,7 @@
     {{-- Gắn menu 1 
     {{-- @include('menu.menutop')--}}
 
-    {{-- Gắn menu 2 
+    {{-- Gắn menu 2
     @include('menu.menutop2') --}}
 
     {{-- Gắn slide 
@@ -61,6 +64,9 @@
     {!! Html::script('public/js/fullpage/scrolloverflow.min.js') !!}
     {!! Html::script('public/js/fullpage/jquery.fullPage.min.js') !!}
     {!! Html::script('public/js/fullpage/fullpage.js') !!}
+
+     {{-- Demo JS Sticky--}}
+    {!! Html::script('public/js/sticky/sticky.js') !!}
 
 </body>
 </html>
