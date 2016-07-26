@@ -4,10 +4,13 @@
 {{-- Demo HomePage 
 @include('slider.homepage')--}} 
 
-{{-- Demo FullPage --}}
-@include('fullpage')
+{{-- Demo FullPage 
+@include('fullpage')--}}
 
-{{-- Demo Sticky --}}
-@include('sticky')
+{{-- Demo Sticky 
+@include('sticky')--}}
+
+{{-- Demo Smartlinks --}}
+@include('test')
 
 @stop

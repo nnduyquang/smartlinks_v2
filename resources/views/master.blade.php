@@ -23,14 +23,15 @@
     {{-- Font Awesome--}} 
     {!! Html::style('public/font-awesome-4.6.3/css/font-awesome.min.css') !!}
 
-    {{-- Demo CSS FullPage--}}    
+    {{-- Demo CSS FullPage  
     {!! Html::style('public/css/fullpage/jquery.fullPage.css') !!}
     {!! Html::style('public/css/fullpage/fullpage.css') !!}
-    {!! Html::style('public/css/fullpage/canho.css') !!}
+    {!! Html::style('public/css/fullpage/canho.css') !!}--}}  
 
-    {{-- Demo CSS Sticky--}}
-    {!! Html::style('public/css/sticky/sticky.css') !!}
+    {{-- Demo CSS Sticky
+    {!! Html::style('public/css/sticky/sticky.css') !!}--}}
 
+   
 </head>
 
 <body>
@@ -42,31 +43,33 @@
     {{-- Gắn menu 2
     @include('menu.menutop2') --}}
 
-    {{-- Gắn slide 
-    @include('slider.sliderMain') --}}
+    {{-- Gắn slide --}}
+    @include('slider.smartlinksSlider') 
     
     {{-- Gắn main contain--}}
     <div class="main-contain">
         @yield('main-contain')
     </div>
 
-    {!! Html::script('public/js/jquery-1.12.4.min.js') !!}
-    {!! Html::script('public/js/jquery-ui.min.js') !!}
-    <script>window.jQuery || document.write('<script src="http://localhost:8080/smartlinks_v2/public/js/jquery-1.12.4.min.js"><\/script>')</script>
-    {!! Html::script('public/js/bootstrap.min.js') !!}
+   {{-- {!! Html::script('public/js/jquery-1.12.4.min.js') !!}--}}
+    {{-- {!! Html::script('public/js/jquery-ui.min.js') !!}--}}
+     {{-- {!! Html::script('public/js/bootstrap.min.js') !!}
     {!! Html::script('public/js/modernizr.js') !!}
-    {!! Html::script('public/js/sliderMain.js') !!}
+    {!! Html::script('public/js/sliderMain.js') !!}--}}
 
-    {{-- Demo JS MenuTop2 --}}
-    {!! Html::script('public/js/menu/menutop2.js') !!}
+    {{-- Demo JS MenuTop2 
+    {!! Html::script('public/js/menu/menutop2.js') !!}--}}
 
-    {{-- Demo JS FullPage--}}
+    {{-- Demo JS FullPage
     {!! Html::script('public/js/fullpage/scrolloverflow.min.js') !!}
     {!! Html::script('public/js/fullpage/jquery.fullPage.min.js') !!}
-    {!! Html::script('public/js/fullpage/fullpage.js') !!}
+    {!! Html::script('public/js/fullpage/fullpage.js') !!}--}}
 
-     {{-- Demo JS Sticky--}}
-    {!! Html::script('public/js/sticky/sticky.js') !!}
+    {{-- Demo JS Sticky
+    {!! Html::script('public/js/sticky/sticky.js') !!}--}}
+
+    {{-- Smartlinks JS--}}
+  
 
 </body>
 </html>
