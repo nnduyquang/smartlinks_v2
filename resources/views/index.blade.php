@@ -5,12 +5,10 @@
 @include('slider.homepage')--}} 
 
 {{-- Demo FullPage 
-@include('fullpage')--}}
+@include('Test/fullpage')--}}
 
 {{-- Demo Sticky 
-@include('sticky')--}}
+@include('Test/sticky')--}}
 
-{{-- Demo Smartlinks --}}
-@include('test')
 
 @stop

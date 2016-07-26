@@ -1,4 +1,4 @@
-<div id="homepage-block-1" class="block slideshow noscript">
+<div id="slider-smartlinks" class="block slideshow noscript">
 
 	<script data-cfasync="false" type="text/javascript">var lsjQuery = jQuery;</script>
 	<script data-cfasync="false" type="text/javascript">
@@ -31,7 +31,7 @@
 			<div class="ls-l" style="top:123px;left:616px;font-family:helveticaneueultralight;font-size:85px;line-height:115px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:right;offsetyin:top;durationin:1300;delayin:2300;easingin:easeOutQuart;rotatein:150;offsetxout:right;offsetyout:top;durationout:1000;easingout:easeInExpo;rotateout:30;scalexout:6;scaleyout:6;parallaxlevel:3;"><span style="color: #71dfca; background-color: rgba(0, 0, 0, 0.6);padding: 0 20px;">SMARTLINKS</span>
 			</div>
 			<div class="ls-l" style="top:236px;left:342px;text-align: center;font-family:helveticaneueultralight;font-size:30px;line-height:40px;color:#ffffff;" data-ls="offsetxin:left;durationin:2000;delayin:2600;easingin:easeOutQuart;rotatein:-100;offsetxout:-500;offsetyout:-350;durationout:1000;easingout:easeInExpo;rotateout:-30;scalexout:3;scaleyout:3;parallaxlevel:2;">Đem Lại <span style="color: #48afdb;">Lợi Nhuận</span> Và Sự Hài Lòng</div>
-			<div class="ls-l" style="top:238px;left:781px;text-align: center;font-family:helveticaneueultralight;font-size:30px;line-height:40px;color:#ffffff;" data-ls="offsetxin:right;durationin:2000;delayin:2800;easingin:easeOutQuart;rotatein:100;offsetxout:500;offsetyout:-350;durationout:1000;easingout:easeInExpo;rotateout:30;scalexout:3.5;scaleyout:3.5;parallaxlevel:2;">Cho Khách Hàng </div>
+			<div class="ls-l" style="top:238px;left:791px;text-align: center;font-family:helveticaneueultralight;font-size:30px;line-height:40px;color:#ffffff;" data-ls="offsetxin:right;durationin:2000;delayin:2800;easingin:easeOutQuart;rotatein:100;offsetxout:500;offsetyout:-350;durationout:1000;easingout:easeInExpo;rotateout:30;scalexout:3.5;scaleyout:3.5;parallaxlevel:2;">Cho Khách Hàng </div>
 			<div class="ls-l" style="top:284px;left:467px;text-align: center;font-family:helveticaneueultralight;font-size:30px;line-height:40px;color:#ffffff;" data-ls="offsetxin:left;offsetyin:bottom;durationin:2500;delayin:3000;easingin:easeOutQuart;rotatein:100;offsetxout:-550;offsetyout:-120;durationout:1000;easingout:easeInExpo;rotateout:-10;scalexout:3.5;scaleyout:3.5;parallaxlevel:2;"><span style="color: #71dfca;">Luôn Là Mục Tiêu</span> Của Chúng Tôi</div>
 		</div>
 
