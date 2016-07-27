@@ -5,10 +5,11 @@
 @include('slider.homepage')--}} 
 
 {{-- Demo FullPage 
-@include('Test/fullpage')--}}
+@include('Test.fullpage')--}}
 
 {{-- Demo Sticky 
-@include('Test/sticky')--}}
+@include('Test.sticky')--}}
 
-
+{{--Smartlinks Trang Chu--}}
+@include('smartlinks.page.trang-chu.trang-chu')
 @stop

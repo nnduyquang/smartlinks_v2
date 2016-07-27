@@ -11,11 +11,11 @@
     <title>Laravel</title>
     {!! HTML::style('public/css/bootstrap.min.css') !!}
 
-    {{-- Demo CSS MenuTop --}}
+    {{-- Demo CSS MenuTop 
 
     {!! Html::style('public/css/menu/menutop.css') !!} 
 
-    
+    --}}
 
     {{-- Demo CSS MenuTop2 
 
@@ -56,11 +56,21 @@
 
     {{--CSS Smartlinks Project--}}
 
-    {!! Html::style('public/css/smartlinks/styleSmartlinks.css') !!}
+    {!! Html::style('public/css/smartlinks/style-smartlinks.css') !!}
+    
+
+    {{--CSS Menu Smartlinks Project--}}
+
+    {!! Html::style('public/css/smartlinks/menu/menu-smartlinks.css') !!}
 
     {{--CSS LayerSlider Smartlinks Project--}}
 
-    {!! Html::style('public/css/smartlinks/LayerSlider/layerslider.css') !!}
+    {!! Html::style('public/css/smartlinks/LayerSlider/layerslider-smartlinks.css') !!}
+
+    {{--CSS Quickfinder Smartlinks Project--}}
+
+    {!! Html::style('public/css/smartlinks/quickfinder/icons.css') !!}
+    {!! Html::style('public/css/smartlinks/quickfinder/quickfinder-smartlinks.css') !!}
 
     {{-- Smartlinks JS LayerSlider --}}
 
@@ -73,22 +83,27 @@
     
 </head>
 
-<body>
+{{--Muốn Sử Dụng Hiệu Ứng Lazy Load Thì Body Phải Thêm class: lazy-enabled--}}
+
+<body class="lazy-enabled">
     {{-- MENU AREA--}}
 
-    {{-- Gắn menu 1 --}}
+    {{-- Gắn menu 1 
 
     @include('menu.menutop')
 
-    
+    --}}
+
     {{-- Gắn menu 2 
 
     @include('menu.menutop2') 
 
     --}}
 
-    {{-- SLIDER AREA --}}
-    @include('slider.smartlinksSlider') 
+    {{-- Gắn menu Smartlinks--}}
+
+    @include('smartlinks.menu.smartlinks-menu')
+
     
     {{-- MAIN CONTENT AREA--}}
 
@@ -104,11 +119,11 @@
 
     --}}
 
-    {{-- Demo JS MenuTop2  --}}
+    {{-- Demo JS MenuTop2 
 
     {!! Html::script('public/js/menu/menutop2.js') !!}
 
-    
+    --}}
 
     {{-- Demo JS FullPage
 
@@ -123,6 +138,13 @@
     {!! Html::script('public/js/sticky/sticky.js') !!}
 
     --}}
+    {{--SMARTLINKS JS--}}
+    {{--Smartlinks QuickFinder--}}
+    {!! Html::script('public/js/smartlinks/quickfinder/scripts.js') !!}
+    {!! Html::script('public/js/smartlinks/quickfinder/jquery.lazyLoading.js') !!}
+    {!! Html::script('public/js/smartlinks/quickfinder/jquery.transform.js') !!}
+    {!! Html::script('public/js/smartlinks/quickfinder/effect.mine.js') !!}
+    {!! Html::script('public/js/smartlinks/quickfinder/quickfinder.js') !!}
 
     
     

@@ -1,0 +1,153 @@
+
+.quickfinder {
+	padding: 50px 0;
+}
+h2 + .quickfinder {
+	padding-top: 30px;
+}
+.quickfinder ul {
+	text-align: justify;
+	margin-bottom: -60px;
+	font-size: 1px;
+	line-height: 0;
+}
+.quickfinder ul:after {
+	content: '';
+	display: inline-block;
+	width: 100%;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+.quickfinder ul li {
+	display: inline-block;
+	text-align: center;
+	width: 255px;
+	vertical-align: top;
+	margin-bottom: 60px;
+}
+.quickfinder ul li {
+	width: 255px;
+	padding: 0 10px;
+}
+.quickfinder ul li a {
+	text-decoration: none;
+}
+.quickfinder ul li span {
+	display: block;
+}
+.quickfinder ul li .image {
+	position: relative;
+	width: 170px;
+	height: 170px;
+	line-height: 170px;
+	border-radius: 85px;
+	-moz-border-radius: 85px;
+	-webkit-border-radius: 85px;
+	font-weight: normal;
+	text-align: center;
+	font-family: 'Codeus-Icons';
+	margin: 0 auto 25px;
+	font-size: 85px;
+	overflow: hidden;
+}
+body.lazy-enabled .quickfinder ul li .image {
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+}
+.quickfinder ul li .image.thumb {
+	background: transparent;
+}
+.quickfinder ul li .image.thumb span {
+	margin: 0;
+	height: 170px;
+	width: 170px;
+	position: relative;
+}
+.quickfinder ul li .image.thumb img {
+	position: relative;
+	border-radius: 85px;
+	-moz-border-radius: 85px;
+	-webkit-border-radius: 85px;
+}
+.quickfinder ul li .image.thumb .overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	opacity: 0;
+	background-color: rgb(58, 83, 112);
+}
+.quickfinder ul li:hover .image.thumb .overlay {
+	opacity: 0.8;
+}
+body.lazy-enabled .quickfinder ul li .caption {
+	opacity: 0;
+}
+.quickfinder ul li .image span{
+	width: 168px;
+	height: 168px;
+	line-height: 168px;
+	margin: 1px auto 0;
+	border-radius: 85px;
+	-moz-border-radius: 85px;
+	-webkit-border-radius: 85px;
+	text-align: center;
+	font-family: 'Codeus-Icons';
+	font-size: 85px;
+	overflow: hidden;
+	cursor: pointer;
+	font-weight: normal;
+}
+.quickfinder ul li .title {
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.quickfinder.block {
+	background-position: 50% 0;
+	background-repeat: repeat;
+	padding-bottom: 0;
+}
+.quickfinder.block .central-wrapper {
+	padding-bottom: 45px;
+}
+.quickfinder.block,
+.slideshow.block {
+			background-color: #f0f4f7;
+		}
+.quickfinder ul li .title {
+			font-family: 'helveticaneueultralight';
+				font-size: 23px;
+				line-height: 26px;
+				font-weight: normal;
+				font-style: normal;
+				color: #3b3e4f;
+	}
+.quickfinder ul li .description {
+			font-family: 'helveticaneueultralight';
+				font-size: 15px;
+				line-height: 23px;
+				font-weight: normal;
+				font-style: normal;
+				color: #3b3e4f;
+	}
+.quickfinder.block ul li .title {
+			color: #3b3e4f;
+	}
+.quickfinder.block ul li .description {
+			color: #3b3e4f;
+	}
+.quickfinder ul li .image {
+			color: #ffffff;
+				background-color: #12d9e0;
+	}
+.quickfinder.block ul li .title{
+color: #12d9e0;
+}
