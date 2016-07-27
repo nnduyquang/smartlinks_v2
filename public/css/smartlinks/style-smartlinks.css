@@ -25,3 +25,39 @@ font-size:18px !important;
 .team-element-name, h3.widget-title, #menu-header,h2 ,#header #site-navigation ul.main_menu li a  ,.news_list .all-news a,h3,h6,.description,.list ul,.news_item .news-content .title,.testimonial_item,.testimonial_item td.info .name,section,body span.styled-subtitle,.team-element,.quickfinder ul li .title,ol li,.pricing-table .pricing-column .pricing-row,ul li,#header #site-navigation li a,.set-description,.title-inner-content{
 font-weight: 600 !important;
 }
+
+#page {
+	width: 100%;
+	min-height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	box-shadow: 0 0 11px 0 rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 0 11px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 11px 0 rgba(0,0,0,0.2);
+	position: relative;
+	z-index: 10;
+}
+#page.fullwidth {
+	padding: 0;
+}
+#page.boxed {
+	width: 1260px;
+	margin: 0 auto;
+}
+@media only screen and (max-width:1259px) {
+	#page.boxed {
+		width: auto;
+	}
+}
+.central-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+#page.boxed #header.header-fixed .central-wrapper {
+	width: 1200px;
+}
+@media only screen and (max-width:1259px) {
+	#page.boxed {
+		width: auto;
+	}
+}
